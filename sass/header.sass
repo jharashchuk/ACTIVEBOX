@@ -1,0 +1,65 @@
+header
+    background: url("/ACTIVEBOX/img/background_template.jpeg") center / cover no-repeat
+    .header_nav
+        padding: 38px 0
+.header_items
+    flex: 0 1 50%
+
+.header_list
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.header_item a
+    opacity: 0.74
+    font-family: Raleway, sans-serif
+    font-size: 13px
+    font-weight: 700
+    text-transform: uppercase
+    color: #ffffff
+    transition: .5s all ease
+
+.header_item a::before
+    background-color: currentColor
+    display: block
+    content: ""
+    height: 2px
+    width: 0%
+    bottom: 0
+    left: 0
+    position: absolute
+    transition: .5s all ease
+
+.header_item:hover a:before
+    width: 100%
+
+.template
+    padding: 156px 0
+    &_header
+        font-family: 'Open Sans', sans-serif
+        font-size: 65px
+        line-height: 71px
+        font-weight: 700
+        text-transform: uppercase
+        color: #ffffff
+        text-align: center
+    &_subheader
+        font-family: Raleway, sans-serif
+        font-size: 22px
+        line-height: 33px
+        font-weight: 400
+        color: #ffffff
+        text-align: center
+        margin-top: 41px
+    &_btn
+        width: 200px
+        height: 46px
+        background-color: #e84545
+        font-size: 13px
+        line-height: 21px
+        font-weight: 600
+        text-transform: uppercase
+        color: #ffffff
+        display: flex
+        justify-content: center
+        align-items: center
